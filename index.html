@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aslbek | Developer Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { 
+            background: linear-gradient(45deg, #0f172a, #1e293b, #334155);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+            color: white; padding: 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+        }
+
+        .profile-img {
+            width: 100px; height: 100px;
+            border-radius: 50%;
+            border: 3px solid #22c55e;
+            padding: 5px;
+            margin-bottom: 20px;
+            transition: 0.5s;
+        }
+        .profile-img:hover { transform: rotate(360deg) scale(1.1); }
+
+        h2 { font-size: 24px; margin-bottom: 5px; letter-spacing: 1px; }
+        p { font-size: 14px; color: #94a3b8; margin-bottom: 30px; }
+
+        .links-container { display: flex; flex-direction: column; gap: 15px; }
+
+        .link-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            display: flex; align-items: center; justify-content: center;
+            gap: 10px;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid transparent;
+        }
+
+        .link-item:hover {
+            background: rgba(34, 197, 94, 0.2);
+            border-color: #22c55e;
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.2);
+        }
+
+        /* Skills badges */
+        .skills { display: flex; justify-content: center; gap: 10px; margin-top: 25px; flex-wrap: wrap; }
+        .badge { background: #000; padding: 5px 12px; border-radius: 20px; font-size: 10px; color: #22c55e; border: 1px solid #22c55e; }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <!-- Rasm joyiga o'zingni rasmingni linkini qo'ysang bo'ladi -->
+        <img src="https://github.com/ulugbekovaslbek13.png" alt="Profile" class="profile-img">
+        
+        <h2>Aslbek</h2>
+        <p>Full-Stack Developer | IT Park Student</p>
+
+        <div class="links-container">
+            <a href="https://t.me/ulugbekovvv_3" class="link-item">✈️ Telegram</a>
+            <a href="https://github.com/ulugbekovaslbek13" class="link-item">🐙 GitHub Portfolio</a>
+            <a href="#" class="https://www.instagram.com/_u1ugbekovvvx71_">📸 Instagram</a>
+            <a href="#" class="link-item">🎮 GTA 6 Fan Club (News)</a>
+        </div>
+
+        <div class="skills">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Java</span>
+            <span class="badge">Python</span>
+        </div>
+    </div>
+
+</body>
+</html>
